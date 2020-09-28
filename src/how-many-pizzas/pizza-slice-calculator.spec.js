@@ -4,28 +4,28 @@ const expect = require('chai').expect;
 const pizzaSliceCalculator = require('./pizza-slice-calculator');
 
 const partyWith8Slices = [
-  { name: 'Joe', slices: 1 },
-  { name: 'Cami', slices: 2 },
-  { name: 'Cassidy', slices: 2 },
-  { name: 'Chris', slices: 1 },
+  { name: 'Joe', num: 1 },
+  { name: 'Cami', num: 2 },
+  { name: 'Cassidy', num: 2 },
+  { name: 'Chris', num: 1 },
 ];
 
 const partyWith13Slices = [
-  { name: 'Joe', slices: 3 },
-  { name: 'Cami', slices: 1 },
-  { name: 'Cassidy', slices: 4 },
-  { name: 'Chris', slices: 5 },
+  { name: 'Joe', num: 3 },
+  { name: 'Cami', num: 1 },
+  { name: 'Cassidy', num: 4 },
+  { name: 'Chris', num: 5 },
 ];
 
 const partyWith35Slices = [
-  { name: 'Joe', slices: 3 },
-  { name: 'Cami', slices: 1 },
-  { name: 'Cassidy', slices: 4 },
-  { name: 'Chris', slices: 5 },
-  { name: 'Fred', slices: 7 },
-  { name: 'Jesse', slices: 4 },
-  { name: 'Nat', slices: 6 },
-  { name: 'Franklin', slices: 5 },
+  { name: 'Joe', num: 3 },
+  { name: 'Cami', num: 1 },
+  { name: 'Cassidy', num: 4 },
+  { name: 'Chris', num: 5 },
+  { name: 'Fred', num: 7 },
+  { name: 'Jesse', num: 4 },
+  { name: 'Nat', num: 6 },
+  { name: 'Franklin', num: 5 },
 ];
 
 describe('Pizza Slice Calculator', () => {

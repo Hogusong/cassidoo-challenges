@@ -27,7 +27,7 @@
  * @returns number - The number of pizzas needed to feed all of the hungry people
  */
 exports.gimmePizza = (peepsThatWantPizza, slicesPerPizza) => {
-  const slicesOfPizzaNeeded = peepsThatWantPizza.reduce((totalSlices, peep) => totalSlices + peep.slices, 0);
+  const slicesOfPizzaNeeded = peepsThatWantPizza.reduce((totalSlices, peep) => totalSlices + peep.num, 0);
   const pizzasNeeded = slicesOfPizzaNeeded / slicesPerPizza;
 
   return Math.ceil(pizzasNeeded);
