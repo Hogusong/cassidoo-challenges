@@ -1,0 +1,8 @@
+{
+  "name": "cassidoo-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chrisjbarr/cassidoo-challenges.git",
+  "author": "Christopher Barr <cb.freelance@gmail.com",
+  "license": "MIT"
+}
