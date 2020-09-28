@@ -26,45 +26,9 @@
  *
  * @returns number - The number of pizzas needed to feed all of the hungry people
  */
-const gimmePizza = (peepsThatWantPizza, slicesPerPizza) => {
+exports.gimmePizza = (peepsThatWantPizza, slicesPerPizza) => {
   const slicesOfPizzaNeeded = peepsThatWantPizza.reduce((totalSlices, peep) => totalSlices + peep.slices, 0);
   const pizzasNeeded = slicesOfPizzaNeeded / slicesPerPizza;
 
   return Math.ceil(pizzasNeeded);
 };
-
-exports.gimmePizza = gimmePizza;
-
-// const party = [
-//   { name: 'Joe', slices: 3 },
-//   { name: 'Cami', slices: 4 },
-//   { name: 'Cassidy', slices: 2 },
-//   { name: 'Chris', slices: 4 },
-// ];
-
-// let pizzas = 0;
-// let slices = 0;
-// let expectedPizzas = 0;
-
-// slices = 8;
-// expectedPizzas = 2;
-// pizzas = gimmePizza(party, slices);
-// console.log(`13 slices needed, and ${slices} slices per pizza means we need ${expectedPizzas} pizzas: ${pizzas}`);
-
-// slices = 3;
-// expectedPizzas = 5;
-// pizzas = gimmePizza(party, slices);
-
-// console.log(`13 slices needed, and ${slices} slices per pizza means we need ${expectedPizzas} pizzas: ${pizzas}`);
-
-// slices = 2;
-// expectedPizzas = 7;
-// pizzas = gimmePizza(party, slices);
-
-// console.log(`13 slices needed, and ${slices} slices per pizza means we need ${expectedPizzas} pizzas: ${pizzas}`);
-
-// slices = 20;
-// expectedPizzas = 1;
-// pizzas = gimmePizza(party, slices);
-
-// console.log(`13 slices needed, and ${slices} slices per pizza means we need ${expectedPizzas} pizzas: ${pizzas}`);
